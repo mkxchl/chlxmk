@@ -496,7 +496,6 @@ body.ChangeTheme .VzxBody .VzxBodyImgProfile img {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    overflow-y: auto;
     overflow: auto;
     background: #fff;
     border-radius: 30px;
@@ -1148,7 +1147,6 @@ body.ChangeTheme .VzxBody .VzxBodyImgProfile img {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    overflow-y: auto;
     overflow: auto;
     background: #fff;
     border-radius: 30px;
@@ -1800,7 +1798,6 @@ body.ChangeTheme .VzxBody .VzxBodyImgProfile img {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    overflow-y: auto;
     overflow: auto;
     background: #fff;
     border-radius: 30px;
@@ -2452,7 +2449,6 @@ body.ChangeTheme .VzxBody .VzxBodyImgProfile img {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    overflow-y: auto;
     overflow: auto;
     background: #fff;
     border-radius: 30px;
@@ -3104,7 +3100,6 @@ body.ChangeTheme .VzxBody .VzxBodyImgProfile img {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    overflow-y: auto;
     overflow: auto;
     background: #fff;
     border-radius: 30px;
@@ -3756,7 +3751,6 @@ body.ChangeTheme .VzxBody .VzxBodyImgProfile img {
     height: 100%;
     transform: translateY(100%);
     transition: 0.5s all cubic-bezier(0.86, 0, 0.07, 1);
-    overflow-y: auto;
     overflow: auto;
     background: #fff;
     border-radius: 30px;
