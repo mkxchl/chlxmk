@@ -1,75 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Vanz</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="My Profiles" />
     <meta property="og:description" content="Marchell Kevandra Profile" />
     <meta property="og:url" content="https://mkxchl.github.io/" />
-    <meta property="og:image" content="https://mkxchl.github.io/vanz/assets/img/logo.jpg" />
-    <meta property="og:image:secure_url" content="https://mkxchl.github.io/vanz/assets/img/logo.jpg" />
+    <meta
+      property="og:image"
+      content="https://mkxchl.github.io/vanz/assets/img/logo.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://mkxchl.github.io/vanz/assets/img/logo.jpg"
+    />
     <meta property="og:author" content="Marchell Kevandra" />
     <!-- Link Rel Assets Icon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="https://mkxchl.github.io/vanz/assets/img/logo.jpg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://mkxchl.github.io/vanz/assets/img/logo.jpg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://mkxchl.github.io/vanz/assets/img/logo.jpg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://mkxchl.github.io/vanz/assets/img/logo.jpg"
+    />
     <!-- Link Rel Assets Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
     <!-- Link Rel Assets Css -->
     <link href="assets/css/style.css" rel="stylesheet" />
-</head>
-<body>
+  </head>
+  <body onload="VzxLoad()">
     <div class="VzxBody">
-        <div class="VzxMusic" onclick="PlayMusic()">
-            <i class="bx bx-volume-full"></i>
-            <p>Play Music</p>
+      <!-- <div class="VzxMusic" onclick="PlayMusic()">
+          <i class="bx bx-volume-full"></i>
+          <p>Play Music</p>
+      </div> -->
+      <div class="VzxBodyImgThumb"></div>
+      <div class="VzxBodyImgProfile">
+        <img src="assets/img/vanzAi7.1.JPG" alt="" onclick="OpenSocial()" />
+      </div>
+      <div class="VzxBodyDetail">
+        <h4>Marchell Kevandra</h4>
+        <p>Stay Safe</p>
+      </div>
+      <div class="VzxBodyList">
+        <li>
+          <ul class="status">
+            Status
+            <span class="status_info">Study</span>
+          </ul>
+          <ul class="VzPlace place">
+            Place
+            <span class="place_info">China</span>
+          </ul>
+          <ul class="hobby">
+            Hobby
+            <span class="hobby_info">Coding</span>
+          </ul>
+        </li>
+      </div>
+      <div class="VzxBodyAbout">
+        <h4>About us</h4>
+        <div class="VzxBodyAboutDesc">
+          <p>where you go?</p>
         </div>
-        <div class="VzxBodyImgThumb"></div>
-        <div class="VzxBodyImgProfile">
-            <img src="assets/img/vanzAi7.1.JPG" alt="">
+      </div>
+      <div class="VzxBodyAbout">
+        <h4>Focus on</h4>
+        <div class="VzxBodyAboutDesc">
+          <p>Laravel, React JS or Native.</p>
         </div>
-        <div class="VzxBodyDetail">
+      </div>
+      <div class="VzxBodyAbout">
+        <h4>Member Since</h4>
+        <div class="VzxBodyAboutDesc">
+          <i class="bx bxl-github"></i>
+          <p class="Since">7 March, 2022</p>
+        </div>
+      </div>
+      <div class="VzxBodyBtn">
+        <div class="VzxBodyBtnContent">
+          <button onclick="GetStarted()">Get Started</button>
+        </div>
+      </div>
+    </div>
+    <div class="VxBodySocial">
+        <div class="VxBodySocialOverlay"></div>
+      <div class="VxBodySocialContent" onclick="CloseOverlay()">
+        <div class="card">
+            <div class="background"></div>
+        <div class="logo">
+            Follow
+        </div>
+        <a href="https://instagram.com/marchell_kevandra">
+            <div class="box box1">
+                <span class="icon">
+                    <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="svg">
+                        <path d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"></path>
+                    </svg>
+                </span>
+            </div>
+        </a>
+        <a href="https://facebook.com/chellgnzxz">
+            <div class="box box2">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="svg">
+                        <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+                    </svg>
+                </span>
+            </div>
+        </a>
+        <a href="https://tiktok.com/@mkxchl">
+            <div class="box box3">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" class="svg">
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"></path>
+                    </svg>
+                </span>
+            </div>
+        </a>
+        <div class="box box4"></div>
+        </div>
+      </div>
+    </div>
+    <div class="VzxHome">
+      <div class="VzxHomeContent">
+        <div class="VanzImgCustome">
+          <img src="assets/img/alone-1.png" alt="Marchell Kevandra">
+        </div>
+        <div class="VzxHomeBody">
+          <div class="VzxHomeBodyThumb"></div>
+          <div class="VzxHomeBodyImg">
+            <img src="assets/img/logo.jpg" alt="">
+          </div>
+          <div class="VzxHomeBodyDetail">
             <h4>Marchell Kevandra</h4>
-            <p>Stay Safe</p>
-        </div>
-        <div class="VzxBodyList">
-            <li>
-                <ul class="status">Status <span class="status_info">Study</span></ul>
-                <ul class="VzPlace place">Place <span class="place_info">China</span></ul>
-                <ul class="hobby">Hobby <span class="hobby_info">Coding</span></ul>
-            </li>
-        </div>
-        <div class="VzxBodyAbout">
+            <p>mrchellkvandra - Xiann</p>
+          </div>
+          <div class="VzxHomeBodyStatus">
+            <img src="assets/img/alone.png" alt="">
+            <p>I may be slow to respond.</p>
+          </div>
+          <div class="VzxHomeBodyHeader">
+            <h4>Details</h4>
+          </div>
+          <div class="VzxHomeBodyRole">
+            <h4>Roles</h4>
+            <div class="VzxHomeBodyRoleList">
+              <div class="VzxHomeBodyRoleListContent">
+                <p>Front End & Back End Website</p>
+              </div>
+              <!-- <div class="VzxHomeBodyRoleListContent">
+                <p>UIX Design</p>
+              </div> -->
+            </div>
+          </div>
+          <div class="VzxHomeBodyAbout">
             <h4>About us</h4>
-            <div class="VzxBodyAboutDesc">
-                <p>where you go?</p>
+            <div class="VzxHomeBodyAboutList">
+              <p>where you go?</p>
             </div>
-        </div>
-        <div class="VzxBodyAbout">
-            <h4>Focus on</h4>
-            <div class="VzxBodyAboutDesc">
-                <p>Laravel, React JS or Native.</p>
+          </div>
+          <div class="VzxHomeBodyGalery">
+            <h4>Galery</h4>
+            <div class="VzxHomeBodyGaleryContent">
+              <img src="https://editor-miring-squad.netlify.app/assets/images/MK_Logo.jpg" alt="Marchell Kevandra">
+              <img src="https://editor-miring-squad.netlify.app/assets/images/logo.jpg" alt="Marchell Kevandra">
+              <img src="assets/img/vanzAi3.JPG" alt="Marchell Kevandra">
+              <img src="assets/img/vanzAi7.1.JPG" alt="Marchell Kevandra">
+              <img src="assets/img/vanzAi2.JPG" alt="Marchell Kevandra">
+              <img src="assets/img/vanzAi4.JPG" alt="Marchell Kevandra">
             </div>
-        </div>
-        <div class="VzxBodyAbout">
-            <h4>Member Since</h4>
-            <div class="VzxBodyAboutDesc">
-                <i class="bx bxl-github"></i>
-                <p class="Since">7 March, 2022</p>
+          </div>
+          <div class="VzxHomeBodyTeams">
+            <h4>Teams</h4>
+            <div class="VzxHomeBodyTeamsContent">
+              <img src="https://editor-miring-squad.netlify.app/assets/images/tca.jpg" alt="Trisakti Cyber Army">
+              <img src="https://editor-miring-squad.netlify.app/assets/images/TNG.jpg" alt="TNG Programmer">
             </div>
-        </div>
-        <div class="VxBodySocial">
-            
-        </div>
-        <div class="VzxBodyBtn">
-            <div class="VzxBodyBtnContent">
-                <button>Get Started</button>
+          </div>
+          <div class="VzxHomeBodyHeader">
+            <h4>Contact</h4>
+          </div>
+          <div class="VzxHomeBodyContact">
+            <div class="VzxHomeBodyContactContent">
+              <i class='bx bx-mail-send'></i>
+              <i class='bx bxl-telegram'></i>
             </div>
+          </div>
+          <footer>
+            <p>Copyright 2024 - <span>Marchell Kevandra</span></p>
+          </footer>
         </div>
+      </div>
     </div>
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
